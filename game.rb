@@ -29,7 +29,7 @@ class Game
       end
 
       if (player.score != 0)
-        puts "#{@player1.name}: #{@player1.score}/3 vs #{@player2.name}: #{@player2.score}/3 "
+        puts "P1: #{@player1.score}/3 vs P2: #{@player2.score}/3 "
         puts "----- NEW TURN -----"
       else
         winner = @is_player1 ? @player2 : @player1
@@ -40,7 +40,6 @@ class Game
       end
 
       @is_player1 = !@is_player1
-
     end
   end
 end
